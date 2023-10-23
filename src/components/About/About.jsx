@@ -8,14 +8,15 @@ function About() {
             <div className="about__wrapper">
             <div className="about__left">   
                   <h2 className='about-tittle'>
-                  <span className='about-span'>ABOUT</span>
-                  <span className='about-span'>ME</span>
+                  <div className='why'>
+                  <span className='about-span'>Qodirjonov</span>
+                  <span className='about-span'>Ziyodillo</span>
+                  </div>
                 </h2>
-                <h1 className='about__tittle'>Qodirjonov Ziyodillo</h1>
                 <p className='info-about-me'>
                 My full name is Qodirjonov Ziyodillo. <br />
                 At the moment I am finishing courses on Frontend. <br />
-                I am also interested in being a doctor and am even studying. <br /> In the future I want to become a good doctor and programmer.</p>
+                 </p>
             </div>
             <div className="about__right">
               <img className='me-img' src={imgMe} alt="img" />

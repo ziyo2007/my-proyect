@@ -1,0 +1,66 @@
+.aboutmore__list {
+    text-align: center;
+    max-width: 1733px;
+    display: flex;
+    justify-content: center;
+    gap: 90px;
+    flex-wrap: wrap;
+    margin-top: 100px;
+
+    li {
+      display: flex;
+      text-align: center;
+      justify-content: center;
+      a{
+        text-decoration: none;
+        color: white;
+        font-size: 30px;
+        
+      }
+      p{
+        font-size: 20px;
+        a{
+          font-size: 20px ;
+        }
+      }
+      
+    }
+
+    .aboutmore__inner {
+      width: 62px;
+      height: 62px;
+      background-color: rgba(33, 33, 33, 1);
+      border-radius: 50%;
+      text-align: center;
+      margin: 0 auto;
+      margin-bottom: 21px;
+      position: relative;
+      .aboutmore__inner1 {
+        width: 12px;
+        height: 12px;
+        background-color: rgba(39, 174, 96, 1);
+        display: block;
+        border-radius: 50%;
+        position: absolute;
+        bottom: 26px;
+        right: 26px;
+      }
+    }
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
