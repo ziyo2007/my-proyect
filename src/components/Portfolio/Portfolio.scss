@@ -1,0 +1,42 @@
+.portfolio-list{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 80px;
+    
+}
+.portfolio__list-item{
+    width: 350px;
+    height: 400px;
+    box-shadow: 0 0 26px 0;
+    border-radius: 15px;
+    overflow: hidden;
+    img{
+        width: 100%;
+        overflow: hidden;
+    }
+    h2{
+        color: rgb(180, 162, 162);
+        font-size: 28px;
+        text-align: center;
+        font-weight: 500;
+        margin-top: 8px;
+    }
+    p{
+        color: rgb(180, 162, 162);
+        font-size: 15px;
+        text-align: center;
+        font-weight: 500;
+        margin-top: 8px;
+    }
+    button{
+        padding: 8px 16px;
+        font-size: 20px;
+        border-radius: 15px;
+        margin-left: 100px;
+        margin-top: 10px;
+        background-color: transparent;
+        color: rgb(180, 162, 162);
+        border: none;
+    }
+}
