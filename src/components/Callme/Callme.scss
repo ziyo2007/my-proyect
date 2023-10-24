@@ -1,0 +1,114 @@
+.tittle-me{
+  color: white;
+  text-align: center;
+  font-size: 50px;
+  margin-top: 100px;
+  font-family: cursive;
+}
+
+.info-me{
+    text-align: center;
+    margin-top: 10px;
+    font-size: 25px;
+    color: white;
+    font-family: cursive;
+    letter-spacing: 2px;
+
+}
+
+.aboutmore__list {
+    text-align: center;
+    max-width: 1733px;
+    display: flex;
+    justify-content: center;
+    gap: 90px;
+    flex-wrap: wrap;
+    margin-top: 100px;
+    margin-left: 130px;
+    li {
+      width: 200px;
+      height: 200px;
+      box-shadow: 16px 14px 20px #0000008c;
+      border-radius: 5px;
+      position: relative;
+      overflow: hidden;
+      cursor: pointer;
+      // a{
+      //   text-decoration: none;
+      //   color: white;
+      //   font-size: 30px;
+      // }
+      li::before{
+        content: "";
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%) rotate(-200deg);
+        width: 160%;
+        height: 160%;
+        background-image: conic-gradient(#ff00bb,#ff00bb 90deg,transparent 130deg,transparent 180deg,#4530ff 180deg,#4530ff 180deg,transparent 310deg,transparent 310deg,);
+      }
+      li::after{
+        content: "";
+        display: block;
+        width: 85px;
+        height: 85px;
+      }
+      @keyframes  amimation{
+        0%{
+          transform: rotate(0deg);
+        }
+        100%{
+          transform: rotate(100deg);
+        }
+      }
+      p{
+        font-size: 20px;
+        a{
+          font-size: 20px ;
+        }
+      }
+      
+    }
+
+    
+
+
+    .aboutmore__inner {
+      width: 62px;
+      height: 62px;
+      background-color: rgba(33, 33, 33, 1);
+      border-radius: 50%;
+      text-align: center;
+      margin: 0 auto;
+      margin-bottom: 21px;
+      position: relative;
+      .aboutmore__inner1 {
+        width: 12px;
+        height: 12px;
+        background-color: rgba(39, 174, 96, 1);
+        display: block;
+        border-radius: 50%;
+        position: absolute;
+        bottom: 26px;
+        right: 26px;
+      }
+    }
+  }
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+  

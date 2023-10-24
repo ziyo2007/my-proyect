@@ -1,16 +1,28 @@
 import React from 'react'
-import './Call.scss'
+import './Callme.scss'
 
 
 
-function Callme() {
+function Callme() { 
 
   return (
     <div className='callme'>
-      <h2>About Me</h2>
-      <p></p>
+      <h2 className='tittle-me'>About Me</h2>
+      <p className='info-me'>At the moment I am finishing courses on
+         Frontend.I am also interested in 
+         being a doctor and am even studying. <br /> 
+         In the future I want to become a good doctor and programmer.</p>
         <ul className='aboutmore__list'>
-                        <li className='aboutmore__item'>
+            <li>
+                <a className='aboutmore__link' href="https://mail.google.com/mail/u/0/#inbox">Here you can see my google account</a>
+            </li>
+            <li>
+                <a href="https://github.com/ziyo2007">Here you can see my github account</a>
+            </li>
+            <li>
+                <a href="tel:998905247027">Here you can contact me</a>
+            </li>
+                        {/* <li className='aboutmore__item'>
                             <a className='aboutmore__link' href="#/">  
                             </a>
                         </li>
@@ -46,7 +58,7 @@ function Callme() {
                                     <p><a href="tel:998905247027">998905247027</a></p>
                                 </span>
                             </a>
-                        </li>
+                        </li> */}
                     </ul>
   
 
