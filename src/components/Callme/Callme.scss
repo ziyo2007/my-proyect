@@ -24,7 +24,8 @@
     gap: 90px;
     flex-wrap: wrap;
     margin-top: 100px;
-    margin-left: 130px;
+    // margin-left: 130px;
+   
     li {
       width: 200px;
       height: 200px;
@@ -32,34 +33,50 @@
       border-radius: 5px;
       position: relative;
       overflow: hidden;
-      cursor: pointer;
-      // a{
-      //   text-decoration: none;
-      //   color: white;
-      //   font-size: 30px;
-      // }
-      li::before{
-        content: "";
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      // cursor: pointer;
+      a{
+        text-decoration: none;
+        color: #fff; 
+        text-shadow: 0 0 16px hsl(0, 0%, 100%);
         position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%,-50%) rotate(-200deg);
-        width: 160%;
-        height: 160%;
-        background-image: conic-gradient(#ff00bb,#ff00bb 90deg,transparent 130deg,transparent 180deg,#4530ff 180deg,#4530ff 180deg,transparent 310deg,transparent 310deg,);
+        z-index: 99;
       }
-      li::after{
+      
+      &::before{
         content: "";
-        display: block;
-        width: 85px;
-        height: 85px;
+        background-image: conic-gradient(#fff 20deg,transparent 120deg);
+        width: 150%;
+        height: 150%;
+        position: absolute;
+        animation: rotate 3s linear infinite;
       }
-      @keyframes  amimation{
+      &:hover::before{
+        animation: rotate 3s linear infinite reverse;
+
+      }
+      
+    &::after{
+        content: '';
+        width: 190px;
+        height: 190px;
+        background: #101010;
+        position: absolute;
+        border-radius: 10px;
+        display: flex;
+      justify-content: center;
+      align-items: center;
+      color: #ff00bb;
+      box-shadow: inset 20px 20px 20px #0000008c;
+      }
+      @keyframes  rotate{
         0%{
           transform: rotate(0deg);
         }
         100%{
-          transform: rotate(100deg);
+          transform: rotate(360deg);
         }
       }
       p{

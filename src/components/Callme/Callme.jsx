@@ -6,7 +6,7 @@ import './Callme.scss'
 function Callme() { 
 
   return (
-    <div className='callme'>
+    <div className='callme container'>
       <h2 className='tittle-me'>About Me</h2>
       <p className='info-me'>At the moment I am finishing courses on
          Frontend.I am also interested in 
@@ -14,13 +14,13 @@ function Callme() {
          In the future I want to become a good doctor and programmer.</p>
         <ul className='aboutmore__list'>
             <li>
-                <a className='aboutmore__link' href="https://mail.google.com/mail/u/0/#inbox">Here you can see my google account</a>
+                <a className='aboutmore__link' target='_blank' href="https://mail.google.com/mail/u/0/#inbox">Here you can see my google account</a>
             </li>
             <li>
-                <a href="https://github.com/ziyo2007">Here you can see my github account</a>
+                <a href="https://github.com/ziyo2007" target='_blank'>Here you can see my github account</a>
             </li>
             <li>
-                <a href="tel:998905247027">Here you can contact me</a>
+                <a href="tel:998905247027" target='_blank'>Here you can contact me on the telephone</a>
             </li>
                         {/* <li className='aboutmore__item'>
                             <a className='aboutmore__link' href="#/">  

@@ -1,44 +1,56 @@
+body {
+	background-color: #242222;
+}
 
-body{
-    background-color: #242222;
+.header {
+	padding-bottom: 100px;
 }
-.logo{
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-    background-color: transparent;
-    margin-left: 30px;
+
+.logo {
+	
+	max-width: 100px;
+	height: 100px;
+	border-radius: 50%;
+	background-color: transparent;
+	margin-left: 30px;
 }
-.header__nav{
-    height: 100px;
-    box-shadow: 0px 0px 16px 0px ;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    
-    h1{
-        color: white;
-        font-size: 40px;
-        font-weight: 700;
-        flex-grow: 1;
-        margin-left: 20px;
-    }
-    ul,ol{
-        list-style-type: none;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        li{
-            margin-left: 40px;
-            margin-right: 100px;
-            font-size: 22px;
-        }
-        a{
-            color: white;
-            text-decoration: none;
-        }
-    }
+
+.header__nav {
+	background-color: #242222;
+	height: 100px;
+	box-shadow: 0px 0px 16px 0px #181717;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	position: fixed;
+	z-index: 99;
+	width: 100%;
+	h1 {
+		color: white;
+		font-size: 40px;
+		font-weight: 700;
+		flex-grow: 1;
+		margin-left: 20px;
+	}
+
+	.header__list {
+		list-style-type: none;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		li {
+			margin-left: 40px;
+			margin-right: 100px;
+			font-size: 22px;
+		}
+	}
 }
+
+.a {
+	color: white;
+	text-decoration: none;
+}
+
 // .nav__span{
 //     width: 100%;
 //     height: 1px;
@@ -46,3 +58,190 @@ body{
 //     display: block;
 //     background-color: white;
 // }
+.none {
+	display: none;
+}
+
+.dropdown-toggle {
+	a {
+		color: #242222 !important;
+	}
+
+	margin-right: 100px;
+	background-color: transparent !important;
+	border: none;
+
+	&::after {
+		display: none;
+	}
+}
+
+.bi-list {
+	width: 100%;
+	text-align: center;
+	font-size: 50px;
+	display: flex;
+	align-items: center;
+	height: 100%;
+}
+
+.btn-group {
+	height: 50px;
+	text-align: center;
+}
+
+.dropdown-menu {
+	background-color: #242222;
+	text-align: center;
+margin-left: -50px !important;
+margin-top: 10px !important;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// :root {
+// 	--dur: 0.3s;
+// 	font-size: calc(40px + (80 - 40)*(100vw - 320px)/(2560 - 320));
+// }
+input {
+	color: #fff;
+	font: 1em/1.5 sans-serif;
+}
+
+form,
+.toggle:before,
+.toggle:after {
+	background: hsl(0, 2.86%, 13.73%);
+	// background-color:red;
+}
+
+form,
+.toggle {
+	position: relative;
+}
+
+form {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	// height: 100vh;
+}
+
+.curtain,
+.sr,
+.toggle:before,
+.toggle:after {
+	position: absolute;
+}
+
+.curtain,
+.toggle:before,
+.toggle:after {
+	transition: transform var(--dur);
+}
+
+.curtain,
+.toggle:before,
+.toggle:checked:after {
+	transition-timing-function: ease-out;
+}
+
+.curtain,
+.sr {
+	top: 0;
+	left: 0;
+}
+
+.curtain {
+	// background: #fff;
+	mix-blend-mode: difference;
+	pointer-events: none;
+	width: 100%;
+	height: 100%;
+	transform: scaleX(0);
+	transform-origin: 0 50%;
+}
+
+.sr,
+.toggle {
+	overflow: hidden;
+}
+
+.sr {
+	clip: rect(1px, 1px, 1px, 1px);
+	color: transparent;
+	width: 1px;
+	height: 1px;
+}
+
+.toggle {
+	background: currentColor;
+	border-radius: 0.75em;
+	cursor: pointer;
+	width: 3em;
+	height: 1.5em;
+	-webkit-appearance: none;
+	appearance: none;
+	-webkit-tap-highlight-color: transparent;
+}
+
+.toggle:before,
+.toggle:after {
+	border-radius: 50%;
+	content: "";
+	display: block;
+	top: 0.25em;
+	left: 0.25em;
+	width: 1em;
+	height: 1em;
+}
+
+.toggle:before,
+.toggle:checked:after {
+	transition-delay: 0s;
+}
+
+.toggle:checked:before,
+.toggle:after {
+	transition-delay: calc(var(--dur) * 0.75);
+	transition-timing-function: cubic-bezier(0.3, 1.6, 0.5, 0.7);
+}
+
+.toggle:before {
+	transform: translateX(-1.5em);
+}
+
+.toggle:checked:before {
+	transform: translateX(1.5em);
+}
+
+.toggle:checked:after {
+	transform: translateX(3em);
+}
+
+.toggle:checked~.curtain {
+	transform: scaleX(1);
+}
+
+.toggle:focus {
+	outline: transparent;
+}

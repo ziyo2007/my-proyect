@@ -1,17 +1,21 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import imgMe from '../../img/img__me.jpg'
 import './About.scss'
+import { Context } from '../../Context/Context'
 function About() {
+  const {svet, setSvet} = useContext(Context)
+
   return (
-    <div className='about'>
+    <div id='about' className='about'>
         <div className="container">
             <div className="about__wrapper">
-            <div className="about__left">   
+            <div className="about__left">     
                   <h2 className='about-tittle'>
-                  <div className='why'>
+                  Qodirjonov Ziyodillo
+                  {/* <div className='why'>
                   <span className='about-span'>Qodirjonov</span>
                   <span className='about-span'>Ziyodillo</span>
-                  </div>
+                  </div> */}
                 </h2>
                 <p className='info-about-me'>
                 My full name is Qodirjonov Ziyodillo. <br />

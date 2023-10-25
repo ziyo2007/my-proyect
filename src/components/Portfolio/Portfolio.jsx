@@ -7,7 +7,7 @@ import thirdPort from '../../img/third_port.jpg'
 
 function Portfolio() {
   return (
-    <div className='portfolio'> 
+    <div id='portfolio' className='portfolio'> 
       <div className="container">
         <div className="wrapper">
             <ul className='portfolio-list'>

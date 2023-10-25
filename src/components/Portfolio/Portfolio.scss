@@ -3,11 +3,12 @@
     justify-content: space-around;
     align-items: center;
     margin-top: 100px;
+    flex-wrap: wrap;
     
 }
 .portfolio__list-item{
     width: 350px;
-    height: 450px;
+    height: 500px;
     box-shadow: 0 0 26px 0;
     border-radius: 15px;
     overflow: hidden;
