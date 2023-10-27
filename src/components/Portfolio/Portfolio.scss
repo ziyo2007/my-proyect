@@ -1,44 +1,189 @@
-.portfolio-list{
-    display: flex;
+.wrapper{
+    display: flex;  
     justify-content: space-around;
-    align-items: center;
-    margin-top: 100px;
+    margin-top: 120px;
     flex-wrap: wrap;
-    
+    gap: 90px;
 }
-.portfolio__list-item{
-    width: 350px;
-    height: 500px;
-    box-shadow: 0 0 26px 0;
-    border-radius: 15px;
+.card1{
+    width: 480px;
+    height: 340px;
+    border-radius: 20px;
+    border: 8px solid white;
+    position: relative;
+    transition: all 1s ease;
     overflow: hidden;
-    img{
-        width: 100%;
-        overflow: hidden;
-        height: 250px;
-    }
-    h2{
-        color: rgb(180, 162, 162);
-        font-size: 28px;
-        text-align: center;
-        font-weight: 500;
-        margin-top: 8px;
-    }
-    p{
-        color: rgb(180, 162, 162);
-        font-size: 15px;
-        text-align: center;
-        font-weight: 500;
-        margin-top: 8px;
-    }
-    button{
-        padding: 8px 16px;
-        font-size: 20px;
-        border-radius: 15px;
-        margin-left: 100px;
-        margin-top: 10px;
-        background-color: transparent;
-        color: rgb(180, 162, 162);
-        border: none;
-    }
+}
+.card1:hover .card1-body{
+    transition: all 1s ease;
+    left: 0;
+}
+.port-img1{ 
+    width: 480px;
+    height: 340px;
+    object-fit: cover;
+}
+.card1-body{
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 100%;
+    position: absolute;
+    // background: rgb(255, 255, 255);
+    backdrop-filter: blur(5px);
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transition: all 1s ease;
+
+}
+.card1-tittle{
+    text-transform: uppercase;
+    font-size: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 500;
+}
+.card1-info{
+    font-size: 14px;
+    // line-height: 25px;
+    margin: 40px 0px;
+    font-weight: 400;
+    // margin-top: 40px;
+}
+.card1-btn{
+    background-color: rgb(163, 163, 163);
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    // margin-top: 40px;
+    border-radius: 5px;
+    text-transform: capitalize;
+    outline: none;
+    cursor: pointer;
+    // width: 120px;
+}
+
+.card2{
+    width: 480px;
+    height: 340px;
+    border-radius: 20px;
+    border: 8px solid white;
+    // box-shadow: 0 0 16px 0;
+    position: relative;
+    transition: all 1s ease;
+    overflow: hidden;
+    color: white;
+}
+.card2:hover .card2-body{
+    transition: all 1s ease;
+    left: 0;
+}
+.port-img2{
+    width: 480px;
+    height: 380px;
+    object-fit: cover;
+}
+.card2-body{
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 100%;
+    position: absolute;
+    // background: rgb(217, 202, 202);
+    backdrop-filter: blur(5px);
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transition: all 1s ease;
+
+}
+.card2-tittle{
+    text-transform: uppercase;
+    font-size: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 500;
+}
+.card2-info{
+    font-size: 14px;
+    // line-height: 25px;
+    margin: 40px 0px;
+    font-weight: 400;
+    // margin-top: 40px;
+}
+.card2-btn{
+    background-color: rgb(69, 77, 54);
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    // margin-top: 40px;
+    border-radius: 5px;
+    text-transform: capitalize;
+    outline: none;
+    cursor: pointer;
+    // width: 120px;
+}
+// @media (max-width:)
+
+
+.card3{
+    width: 480px;
+    height: 340px;
+    border-radius: 20px;
+    border: 8px solid white;
+    // box-shadow: 0 0 16px 0;
+    position: relative;
+    transition: all 1s ease;
+    overflow: hidden;
+    color: white;
+}
+.card3:hover .card3-body{
+    transition: all 1s ease;
+    left: 0;
+}
+.port-img3{
+    width: 480px;
+    height: 380px;
+    object-fit: cover;
+}
+.card3-body{
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 100%;
+    position: absolute;
+    // background: rgb(217, 202, 202);
+    backdrop-filter: blur(5px);
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transition: all 1s ease;
+
+}
+.card3-tittle{
+    text-transform: uppercase;
+    font-size: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 500;
+}
+.card3-info{
+    font-size: 14px;
+    // line-height: 25px;
+    margin: 40px 0px;
+    font-weight: 400;
+    // margin-top: 40px;
+}
+.card3-btn{
+    background-color: rgb(81, 194, 236);
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    // margin-top: 40px;
+    border-radius: 5px;
+    text-transform: capitalize; 
+    outline: none;
+    cursor: pointer;
+    // width: 120px;
 }
