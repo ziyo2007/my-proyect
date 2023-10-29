@@ -12,10 +12,6 @@ function About() {
             <div className="about__left">     
                   <h2 className='about-tittle'>
                   Qodirjonov Ziyodillo
-                  {/* <div className='why'>
-                  <span className='about-span'>Qodirjonov</span>
-                  <span className='about-span'>Ziyodillo</span>
-                  </div> */}
                 </h2>
                 <p className='info-about-me'>
                 My full name is Qodirjonov Ziyodillo. <br />
@@ -26,39 +22,14 @@ function About() {
               <img className='me-img' src={imgMe} alt="img" />
             </div>
             </div>
+              {/* <div className="big-bubble">
+                <div className="bubbles">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                </div>
+              </div> */}
         </div>
-        {/* <ul>
-    <li>
-      <input type="checkbox" />
-      <div>W</div>
-    </li>
-    <li>
-      <input type="checkbox" />
-      <div>E</div>
-    </li>
-    <li>
-      <input type="checkbox" />
-      <div>B</div>
-    </li>
-  </ul>
-  <ul>
-    <li>
-      <input type="checkbox" />
-      <div>B</div>
-    </li>
-    <li>
-      <input type="checkbox" />
-      <div>E</div>
-    </li>
-    <li>
-      <input type="checkbox" />
-      <div>K</div>
-    </li>
-    <li>
-      <input type="checkbox" />
-      <div>S</div>
-    </li>
-  </ul> */}
     </div>
   )
 }

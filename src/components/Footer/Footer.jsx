@@ -3,14 +3,44 @@ import './Footer.scss'
 function Footer() {
   return (
     <div className='footer'>
-      {/* <div class="container">
-    <i class="fa fa-apple" id="apple"></i>
-    <i class="fa fa-twitter" id="twitter"></i>
-    <i class="fa fa-github-square github" id="github"></i>
-    <i class="fa fa-facebook-square" id="facebook"></i>
-  </div> */}
-
-
+      <ul className='f-list'>
+        <li className='f-list-item'>
+          <a href="">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <i class="bi bi-facebook"></i>
+          </a>
+        </li>
+        <li className='f-list-item'>
+          <a href="">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <i class="bi bi-twitter"></i>
+          </a>
+        </li>
+        <li className='f-list-item'>
+          <a href="">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <i class="bi bi-instagram"></i>
+          </a>
+        </li>
+        <li className='f-list-item'>
+          <a href="">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <i class="bi bi-google"></i>
+          </a>
+        </li>
+      </ul>
     </div>
   )
 }
