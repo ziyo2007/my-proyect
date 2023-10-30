@@ -10,7 +10,7 @@ function Header() {
   });
   const { svet, setSvet } = useContext(Context)
   return (
-    <div className='header'>
+    <div className={svet == true?'header light': 'dark header'}>
 
       <div className="container">
         <nav className='header__nav'>

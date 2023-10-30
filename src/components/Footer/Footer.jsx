@@ -14,16 +14,16 @@ function Footer() {
           </a>
         </li>
         <li className='f-list-item'>
-          <a href="">
+          <a href="https://github.com/ziyo2007" target='_blank'>
             <span></span>
             <span></span>
             <span></span>
             <span></span>
-            <i class="bi bi-twitter"></i>
+            <i class="bi bi-github"></i>
           </a>
         </li>
         <li className='f-list-item'>
-          <a href="">
+          <a href="https://instagram.com/qodirjonov.z?igshid=OGQ5ZDc2ODk2ZA==" target='_blank'>
             <span></span>
             <span></span>
             <span></span>
@@ -32,7 +32,7 @@ function Footer() {
           </a>
         </li>
         <li className='f-list-item'>
-          <a href="">
+          <a href="https://mail.google.com/mail/u/0/#inbox" target='_blank'>
             <span></span>
             <span></span>
             <span></span>
